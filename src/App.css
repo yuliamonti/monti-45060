@@ -3,31 +3,26 @@ html {
   box-sizing: border-box;
   background-color: rgb(210, 224, 185);
 }
+body {
+  font-size: 16px;
+  background-image: linear-gradient(to top, var(--rosaclaro) 0%, var(--grisclaro) 100%);
+
+}
 *, *:before, *:after {
   box-sizing: inherit;
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(67, 66, 66);
+
+}
+.app {
+background-color: rgb(234, 230, 230);
+height: auto;
+}
+.app-logo img {
+  height: 10rem;
+  pointer-events: none;
 }
 
-.contenedor {
-  width: 95%;
-  max-width: 120rem;
-  margin: 0 auto;
-}
-
-h1 {
-  font-size: 2rem;
-}
-h2 {
-  font-size: 1.8rem;
-  font-weight: 600;
-}
-h3 {
-  font-size: 1.5rem;
-}
-h4 {
-  font-size: 1.3rem;
-}
-p {
-  font-size: 1.3rem;
+.navBG {
+  background-color: #7952b3;
+  padding: 2rem;
 }
