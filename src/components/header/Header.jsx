@@ -1,4 +1,4 @@
-import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
+import {HashRouter, Routes, Route, Navigate} from 'react-router-dom'
 
 import Inicio from '../inicio';
 import SobreMi from '../sobre-mi';
@@ -11,7 +11,7 @@ function Header () {
         <div className="">
 
         <header>
-            <BrowserRouter>
+            <HashRouter>
                 <Routes basename={process.env.PUBLIC_URL}>
                     <Route path='/' element={ <MenuNav />} />
                     {/* <Route index element={ <Inicio />} /> */}
@@ -22,7 +22,7 @@ function Header () {
                     <Route path='CartWidget' element={ <Cart /> } />
                     <Route path='*' element={ <Navigate replace to="/"/> }/>
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         
             </header>
         </div>
