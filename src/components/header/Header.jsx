@@ -12,7 +12,7 @@ function Header () {
 
         <header>
             <BrowserRouter>
-                <Routes>
+                <Routes basename={process.env.PUBLIC_URL}>
                     <Route path='/' element={ <MenuNav />} />
                     {/* <Route index element={ <Inicio />} /> */}
                     <Route path='inicio' element={ <Inicio /> } />

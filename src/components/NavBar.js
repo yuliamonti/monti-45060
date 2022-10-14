@@ -29,9 +29,6 @@ const MenuNav = () => {
                     <Cart />
                 </Container>
             </Navbar>
-            
-
-
 
             <section> 
                 <Outlet />
