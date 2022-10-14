@@ -14,7 +14,8 @@
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
-    "homepage": "https://yuliamonti.github.io/monti-45060/"
+    "homepage": "https://yuliamonti.github.io/monti-45060/",
+    "build": "react-scripts build && cp build/index.html build/404.html"
   },
   "scripts": {
     "start": "react-scripts start",
