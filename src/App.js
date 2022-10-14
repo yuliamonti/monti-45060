@@ -5,7 +5,7 @@ import {Footer} from './components/footer/Footer';
 
 const appContent = ( ) => {
   return (
-    <>
+    
       <div>
 
         <Header />
@@ -15,7 +15,7 @@ const appContent = ( ) => {
         <Footer/>
       </div>
     
-    </>
+ 
   )
 }
 
