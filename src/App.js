@@ -3,7 +3,7 @@ import Header from './components/header/Header';
 import Main from './components/main/Main';
 import {Footer} from './components/footer/Footer';
 
-const appContent = ( ) => {
+function App () {
   return (
     <>
       <div>
@@ -19,5 +19,5 @@ const appContent = ( ) => {
   )
 }
 
-export default appContent;
+export default App;
 
