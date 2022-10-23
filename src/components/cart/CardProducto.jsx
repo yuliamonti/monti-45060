@@ -1,15 +1,21 @@
+import ItemCount from './ItemCount'
 
-function CardProducto ({title, imageSrc, Descripcion, greeting}) {
+export const onAdd = (onAdd) => {
+    console.log('Producto agregado')
+}
+function CardProducto ({title, imageSrc, Descripcion}) {
     return (
+        <>
             <div className="card text-center">
                 <img src={imageSrc} alt="Imagen de Producto" className='img-fluid'></img>
                 <div className="card-body">
-                    <h4 className="card-title "> {greeting}</h4>
                     <h3 className="card-title"> {title} </h3>
                     <p className="card-text text-secondary"> {Descripcion} </p>
-                    <a href='#!' className="btn btn-outline-secondary rounded-0"> Comprar</a>
+                    <ItemCount/>
+                    <button className="btn light lg btn-outline-secondary btn-lg  rounded-2 mb-4 ms-2 mx-auto" onClick={onAdd}> Agregar </button> 
                 </div>
             </div>
+            </>
     )
 }
 export default CardProducto;
