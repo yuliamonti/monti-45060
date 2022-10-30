@@ -1,9 +1,7 @@
+import { Link } from 'react-router-dom';
 import ItemCount from './ItemCount'
 
-export const onAdd = (onAdd) => {
-    console.log('Producto agregado')
-}
-function CardProducto ({title, imageSrc, Descripcion}) {
+function CardProducto({ title, imageSrc, Descripcion, Price, Id }) {
     return (
         <>
             <div className="card text-center">
@@ -11,11 +9,13 @@ function CardProducto ({title, imageSrc, Descripcion}) {
                 <div className="card-body">
                     <h3 className="card-title"> {title} </h3>
                     <p className="card-text text-secondary"> {Descripcion} </p>
-                    <ItemCount/>
-                    <button className="btn light lg btn-outline-secondary btn-lg  rounded-2 mb-4 ms-2 mx-auto" onClick={onAdd}> Agregar </button> 
+                    <p className="card-title bold"> ${Price} </p>
+                    <Link to={`/item/${Id}`} className="btn btn-secondary btn-lg  rounded-2 mb-4 ms-2 ">ver detalle</Link>
+                    <ItemCount />
+
                 </div>
             </div>
-            </>
+        </>
     )
 }
-export default CardProducto;
+export default CardProducto

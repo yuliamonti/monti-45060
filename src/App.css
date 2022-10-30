@@ -18,7 +18,8 @@ background-color: rgb(234, 230, 230);
 height: auto;
 }
 .app-logo img {
-  height: 10rem;
+  width: 20rem;
+  height: auto;
   pointer-events: none;
 }
 
