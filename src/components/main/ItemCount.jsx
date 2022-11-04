@@ -19,7 +19,6 @@ const ItemCount = (stock = 0) => {
 
     return (
         <div>
-
             <button className="btn light lg btn-outline-secondary btn-lg rounded-2 mb-1 ms-2 mx-auto" onClick={restar}> - </button>
             <button className="btn light lg btn-outline-secondary btn-lg rounded-2 mb-1 ms-2 mx-auto" > {cantidad} </button>
             <button onClick={sumar} className="btn light lg btn-outline-secondary btn-lg  rounded-2 mb-1 ms-2 mx-auto" > + </button>

@@ -3,8 +3,8 @@ import './App.css'
 import Header from './components/header/Header';
 import Main from './components/main/Main';
 import { Footer } from './components/footer/Footer';
-import ItemListContainer from './components/cart/ItemListContainer';
-import ItemDetailContainer from './components/cart/ItemDetailContainer';
+import ItemListContainer from './components/main/ItemListContainer';
+import ItemDetailContainer from './components/main/ItemDetailContainer';
 
 
 function App() {

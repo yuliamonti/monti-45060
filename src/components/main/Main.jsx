@@ -1,4 +1,4 @@
-import Item from "../cart/ItemListContainer";
+import Item from "../main/ItemListContainer";
 
 function Main () {
     return (

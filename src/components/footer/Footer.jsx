@@ -1,4 +1,4 @@
-import MenuNav from "../NavBar"
+import MenuNav from "../header/NavBar"
 
 
 export const Footer = () => {

@@ -2,8 +2,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Outlet, Link } from 'react-router-dom';
-import Cart from './cart/CartWidget'
-import Logo from './header/Logo'
+import Cart from '../cart/CartWidget'
+import Logo from './Logo'
 
 const MenuNav = () => {
     return (
@@ -20,9 +20,9 @@ const MenuNav = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link as={Link} to='/' > Inicio </Nav.Link>
-                            <Nav.Link as={Link} to='/category/:categorId' > Champú </Nav.Link>
-                            <Nav.Link as={Link} to='/category/:categorId' > Acondicionador </Nav.Link>
-                            <Nav.Link as={Link} to='/category/:categorId' > Mascarilla </Nav.Link>
+                            <Nav.Link as={Link} to='/item/id' > Champú </Nav.Link>
+                            <Nav.Link as={Link} to='/item/id' > Acondicionador </Nav.Link>
+                            <Nav.Link as={Link} to='/item/id' > Mascarilla </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
