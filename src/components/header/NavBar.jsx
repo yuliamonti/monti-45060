@@ -20,9 +20,9 @@ const MenuNav = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link as={Link} to='/' > Inicio </Nav.Link>
-                            <Nav.Link as={Link} to='/item/id' > Champú </Nav.Link>
-                            <Nav.Link as={Link} to='/item/id' > Acondicionador </Nav.Link>
-                            <Nav.Link as={Link} to='/item/id' > Mascarilla </Nav.Link>
+                            <Nav.Link as={Link} to='/item/1' > Champú </Nav.Link>
+                            <Nav.Link as={Link} to='/item/2' > Acondicionador </Nav.Link>
+                            <Nav.Link as={Link} to='/item/3' > Mascarilla </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
