@@ -1,11 +1,8 @@
-import logoimperfecta from '../../Imagenes/logoimperfecta.png'
-
-
 function Logo() {
     return (
 
             <div className="app-logo">
-                <img src={logoimperfecta} alt="Imágen de Logotipo" />
+                <img src={'/Imagenes/logoimperfecta.png'} alt="Imágen de Logotipo" />
             </div>
         
     );

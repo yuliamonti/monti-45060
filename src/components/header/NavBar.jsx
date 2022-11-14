@@ -2,16 +2,22 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Outlet, Link } from 'react-router-dom';
-import Cart from '../cart/CartWidget'
+import CartWidget from './CartWidget';
 import Logo from './Logo'
 
-const MenuNav = () => {
+const MenuNav = ({ isInHeader }) => {
+/*     console.log (isInHeader); */
+
     return (
         <>
-            <Navbar className="navBG" variant="dark" expand="lg">
+            <Navbar className={isInHeader
+                            ? 'navBG' 
+                            : 'footer'
+                            } 
+                            variant="dark" expand="lg">
                 <Container>
                     <Navbar.Brand as={Link} to='/'>
-                        <Logo />
+                        <Logo/>
                     </Navbar.Brand>
                 </Container>
 
@@ -20,16 +26,17 @@ const MenuNav = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link as={Link} to='/' > Inicio </Nav.Link>
-                            <Nav.Link as={Link} to='/item/1' > Champú </Nav.Link>
-                            <Nav.Link as={Link} to='/item/2' > Acondicionador </Nav.Link>
-                            <Nav.Link as={Link} to='/item/3' > Mascarilla </Nav.Link>
+                            <Nav.Link as={Link} to='/item/tdy7HUjW98ppZKARGaP4'> Champú </Nav.Link>
+                            <Nav.Link as={Link} to='/item/acondicionador' > Acondicionador </Nav.Link>
+                            <Nav.Link as={Link} to='/item/mascarilla' > Mascarilla </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
-
-                <Container>
-                    <Cart />
+                
+                <Container> 
+                    <Link as={Link} to='/cart'> <CartWidget/>  </Link>
                 </Container>
+        
             </Navbar>
 
             <section>

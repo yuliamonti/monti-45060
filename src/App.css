@@ -5,6 +5,7 @@ html {
 }
 body {
   font-size: 16px;
+  color: grey;
   background-image: linear-gradient(to top, var(--rosaclaro) 0%, var(--grisclaro) 100%);
 
 }
@@ -12,6 +13,16 @@ body {
   box-sizing: inherit;
   font-family: Arial, Helvetica, sans-serif;
 
+}
+a:-webkit-any-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+h1, h2, h3 {
+  font-weight: bold;
+}
+.container img {
+  max-width: 100%;
 }
 .app {
 background-color: rgb(234, 230, 230);
@@ -26,4 +37,8 @@ height: auto;
 .navBG {
   background-color: #7952b3;
   padding: 2rem;
+}
+.navFooter {
+  background-color: #7952b3;
+  padding: 0;
 }

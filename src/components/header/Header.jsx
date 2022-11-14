@@ -3,7 +3,7 @@ import MenuNav from './NavBar';
 
 function Header () {
     return (
-        <div className="">
+        <div className="navBG">
             <MenuNav/>
         </div>
     );

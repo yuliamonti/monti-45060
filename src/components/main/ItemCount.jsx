@@ -1,30 +1,32 @@
 import { useState } from 'react';
 
-const ItemCount = (stock = 0) => {
-    const [cantidad, setCantidad] = useState(0);
+const ItemCount = ({ stock, onAdd, initial = 1 }) => {
+    const [cantidad, setCantidad] = useState(initial);
 
-    const sumar = (stock = 20) => {
-        if (cantidad >= 0 && cantidad < 20) {
-            setCantidad(cantidad + 1)
+    const sumar = () => {
+        if (cantidad < stock) {
+            setCantidad(cantidad + 1);
         }
-    }
+    };
     const restar = () => {
-        if (cantidad < 20 && cantidad > 0) {
-            setCantidad(cantidad - 1)
+        if (cantidad > 1) {
+            setCantidad(cantidad - 1);
         }
-    }
+    };
+    const agregar = () => {
+        onAdd(cantidad);
+    };
     const reset = () => {
         setCantidad(0)
-    }
+    } 
 
     return (
         <div>
-            <button className="btn light lg btn-outline-secondary btn-lg rounded-2 mb-1 ms-2 mx-auto" onClick={restar}> - </button>
+            <button onClick={restar} className="btn light lg btn-outline-secondary btn-lg rounded-2 mb-1 ms-2 mx-auto" > - </button>
             <button className="btn light lg btn-outline-secondary btn-lg rounded-2 mb-1 ms-2 mx-auto" > {cantidad} </button>
-            <button onClick={sumar} className="btn light lg btn-outline-secondary btn-lg  rounded-2 mb-1 ms-2 mx-auto" > + </button>
-            <br />
-            <br />
-            <button onClick={reset} className="btn light lg btn-outline-secondary btn-lg  rounded-2 mb-4 ms-2 mx-auto" > Vaciar </button>
+            <button onClick={sumar} className="btn light lg btn-outline-secondary btn-lg  rounded-2 mb-1 ms-2 mx-auto" > + </button><br/>
+            <button onClick={agregar} className="btn light lg btn-outline-secondary btn-lg  rounded-2 mb-4 ms-2 mx-auto" > Agregar al Carrito </button><br/>
+            <button onClick={reset} className="btn light lg btn-outline-secondary btn-lg  rounded-2 mb-4 ms-2 mx-auto" > Vaciar Carrito </button><br />
         </div>
     );
 };
