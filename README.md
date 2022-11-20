@@ -75,7 +75,7 @@ Brok Electrónica, Servicio Técnico Autorizado de Sony y Samsung: Web utilizand
 ## :heart_decoration: Gracias:
 
 
-🔸Profe Eric Wajnrajch por tu enseñarza, tu paciencia y tu empatía hacia tus alumnos. <br>
+🔸Profe Eric Wajnrajch por tu enseñanza, tu paciencia y tu empatía hacia tus alumnos. <br>
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/eric-wajnrajch/) <br>
 
 🔸Jorge Rubinichs, mi compañero de React, por tu generosidad en todo el curso. <br>
