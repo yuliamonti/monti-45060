@@ -78,7 +78,7 @@ link {
 
 .cardMW {
   width: clamp(225px, 30vw, 600px);
-  height: clamp(400px, 70vw, 650px);
+  height: clamp(420px, 70vw, 650px);
   margin: 0 auto;
   border: 5px solid #7952b345;
   border-radius: 2rem;
