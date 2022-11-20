@@ -25,7 +25,7 @@ const CartProvider = ({ children }) => {
             if (itemPorAgregar.id === prodCarrito.id) {
                 const productoActualizado = {
                     ...prodCarrito,
-                    cantidad: prodCarrito.cantidad + cantidad,
+                    cantidad: prodCarrito.cantidad += cantidad,
                 };
                 return productoActualizado;
             } else {
@@ -50,7 +50,6 @@ const CartProvider = ({ children }) => {
         })
         return count;
     };
-
 
     //funcion  para sumar precio total del carrito
     const totalPrecio = () => {

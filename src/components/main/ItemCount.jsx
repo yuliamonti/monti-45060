@@ -22,11 +22,11 @@ const ItemCount = ({ stock, onAdd, initial = 1 }) => {
 
     return (
         <div>
-            <button onClick={restar} className="btn light lg btn-outline-secondary btn-lg rounded-2 mb-1 ms-2 mx-auto" > - </button>
-            <button className="btn light lg btn-outline-secondary btn-lg rounded-2 mb-1 ms-2 mx-auto" > {cantidad} </button>
-            <button onClick={sumar} className="btn light lg btn-outline-secondary btn-lg  rounded-2 mb-1 ms-2 mx-auto" > + </button><br/>
-            <button onClick={agregar} className="btn light lg btn-outline-secondary btn-lg  rounded-2 mb-4 ms-2 mx-auto" > Agregar al Carrito </button><br/>
-            <button onClick={reset} className="btn light lg btn-outline-secondary btn-lg  rounded-2 mb-4 ms-2 mx-auto" > Vaciar Carrito </button><br />
+            <button onClick={restar} className="btn btnCont light lg btn-outline-secondary btn-lg mb-1 ms-2 mx-auto" > - </button>
+            <button className="btn btnCont light lg btn-outline-secondary btn-lg mb-1 ms-2 mx-auto" > {cantidad} </button>
+            <button onClick={sumar} className="btn btnCont light lg btn-outline-secondary btn-lg  mb-1 ms-2 mx-auto" > + </button><br/>
+            <button onClick={agregar} className="btn  light lg btn-outline-secondary btn-lg  mb-4 ms-2 mx-auto" > Agregar al Carrito </button><br/>
+            <button onClick={reset} className="btn  light lg btn-outline-secondary btn-lg  mb-4 ms-2 mx-auto" > Vaciar Carrito </button><br />
         </div>
     );
 };

@@ -1,12 +1,15 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './App.css'
 import Header from './components/header/Header';
 import ItemListContainer from './components/main/ItemListContainer';
 import ItemDetailContainer from './components/main/ItemDetailContainer';
 import { Footer } from './components/footer/Footer';
 import Cart from './components/cart/Cart';
-import CartProvider from './context/cartContext';
 import Notfound from './components/error/notfound';
+import Form from './components/form/Form';
+import CartProvider from './context/cartContext';
+import './App.css'
+import Hero from './components/main/hero';
+
 
 function App() {
   return (
@@ -14,13 +17,14 @@ function App() {
       <CartProvider>
         <Header />
         <Routes>
-          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/" element={<Hero/>} />
           <Route path="/header" element={<Header />} />
           <Route path="/footer" element={<Footer />} />
-          <Route path="/category/:id" element={<ItemListContainer />} />
-          <Route path="/item/:idProd" element={<ItemDetailContainer />} />
+          <Route path="/categoria/:categoriaId" element={<ItemListContainer />} />
+          <Route path="/detalle/:detalleId" element={<ItemDetailContainer />} />
           <Route path="/cart" element={<Cart />} />
-          <Route path="*" element={<Notfound/>} />
+          <Route path="/checkout" element={<Form />} />
+          <Route path="*" element={<Notfound />} />
         </Routes>
         <Footer />
       </CartProvider>
@@ -29,4 +33,3 @@ function App() {
 }
 
 export default App;
-

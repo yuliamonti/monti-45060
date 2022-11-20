@@ -1,11 +1,13 @@
 import CardProducto from './CardProducto';
 
-const ItemList = ({items}) => {
+const ItemList = ({ items }) => {
     return (
-        <div className="container d-flex justify-content-center align-items-center h-100">
+        <div className='contenedor'>
+            <div className="grid">
                 {items.map((producto) => {
-                    return <CardProducto producto={producto} key={producto.id}/>
-            })}
+                    return <CardProducto producto={producto} key={producto.id} />
+                })}
+            </div>
         </div>
     )
 }
